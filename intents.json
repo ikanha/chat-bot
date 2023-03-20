@@ -1,0 +1,522 @@
+{"intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+		    "Hi there",
+		    "How are you",
+		    "Is anyone there?",
+		    "Hey",
+		    "Hola",
+		    "Hello",
+		    "Good day",
+		    "Namaste"
+            ],
+            "responses": [
+		    "Hello, thanks for asking",
+		    "Good to see you again",
+		    "Hi there, how can I help?"
+             ],
+            "context": [""]
+        },
+        
+        
+        {
+            "tag": "whatsup",
+            "patterns": [
+                    "Whats up",
+                    "Wazzup",
+                    "How are you",
+                    "sup",
+                    "How you doing"
+            ],
+            "responses": [
+                    "All good..What about you?"
+            ]
+        },
+        
+        
+        {
+            "tag": "goodbye",
+            "patterns": [
+		    "Bye",
+		    "See you later",
+		    "Goodbye",
+		    "Nice chatting to you, bye",
+		    "Till next time"
+            ],
+           "responses": [
+         	    "See you!",
+         	    "Have a nice day",
+         	    "Bye! Come back again soon."
+            ],
+           "context": [""]
+        },
+        
+        
+        {
+        
+         "tag": "thanks",
+         "patterns": [
+		 "Thanks",
+		 "Thank you",
+		 "That's helpful",
+		 "Awesome, thanks",
+		 "Thanks for helping me",
+		 "okk",
+                 "okie",
+                 "nice work",
+                 "well done",
+                 "good job",
+                 "thanks for the help",
+                 "Thank You",
+                 "its ok",
+                 "Thanks",
+                 "k",
+                 "ok",
+                 "okay"                            
+		 ],
+         "responses": [
+		 "Happy to help!",
+		 "Any time!",
+		 "I am glad I helped you",
+		 "My pleasure",
+		 "it was nice talking to you. Come back soon!",
+                 "good talk"
+		 ],
+         "context": [""]
+        },
+        
+        
+        {"tag": "no_answer",
+         "patterns": [],
+         "responses": [
+		 "Sorry, can't understand you",
+		 "Please give me more info",
+		 "Not sure I understand"
+		 ],
+         "context": [""]
+        },
+        
+        
+        {
+         "tag": "options",
+         "patterns": [
+		 "How you could help me?",
+		 "What you can do?",
+		 "What help you provide?",
+		 "How you can be helpful?",
+		 "What support is offered"
+		 ],
+         "responses": [
+		 "I can guide you through the college Admission Proces and the facilities that our institute offers",
+		 "Offering support for college admission process and the related information"
+         ],
+         "context": [""]
+        },       
+        
+        
+	{
+	 "tag": "location",
+         "patterns": [
+         			"where is the college located",
+                                "where is the institute located",
+                                "college is located at",
+                                "institute is located at",
+                                "where is college",
+                                "where is institute",
+                                "where is college located",
+                                "where is institute located",
+                                "address of college",
+                                "address of institute",
+                                "how to reach college",
+                                "how to reach institute",
+                                "college location",
+                                "institute location",
+                                "college address",
+                                "institute address",
+                                "wheres the college",
+                                "wheres the institute",
+                                "how can I reach college",
+                                "how can I reach institute",
+                                "whats is the college address",
+                                "whats is the institute address",
+                                "what is the address of college",
+                                "what is the address of institute",
+                                "address",
+                                "location"
+                     ],
+		  
+                                
+         "responses": [ 
+         			"IIIT Vadodara is situated at Block No.9 of Government Engineering College, Sector-28, Gandhinagar"
+         	],
+         "context": [""]
+		
+		},
+		
+		{
+                        "tag": "placement",
+                        "patterns": [
+                                "What is college placement",
+                                "What is institute placement",
+                                "Which companies visit in college",
+                                "Which companies visit in institute",
+                                "What is average package",
+                                "number of student placed",
+                                "companies visit",
+                                "package",
+                                "placement",
+                                "recruitment",
+                                "companies"
+                        ],
+                        "responses": [
+                                 "Percentage of eligible students placed: B.tech(2021-22) 100% placement achieved , M.tech(2021-22) 100% placement achieved.     For more detail visit : Link :https://sites.google.com/iiitvadodara.ac.in/placement2021/placement-statistics/m-tech "				
+                        ],
+                        "context_set": ["search_placement_record_for_recent_passed_batch"]
+                },
+				
+				{
+                        "tag": "admission",
+                        "patterns": [
+                                "what is the process of admission",
+                                "what is the admission process",
+                                "How to take admission in your college",
+                                "How to take admission in your institute",
+                                "What is the process for admission",
+                                "admission",
+                                "admission process"
+                        ],
+                        "responses": [
+                                "Admissions in B.Tech. program is via JEE Main exam merit. Admissions in M.Tech. program is via GATE exam merit."
+                        ],
+                        "context_set": ["how_to_get_admission_in_iiit_vadodara_institute"]
+                },
+				
+				{
+                        "tag": "facilities",
+                        "patterns": [
+                                "What facilities college provide",
+                                "What facilities institute provide",
+                                "College facility",
+                                "What are college facilities",
+                                "What are institute facilities",
+                                "facilities",
+                                "facilities provided"
+                        ],
+                        "responses": [
+                                "Institute provides AC LAB, SMART CLASSROOMS,CAFETERIA,TRANSPORT FACILITY,LIBRARY & INFORMATION CENTER,TEACHING STAFF,PRACTICAL LAB,PLAY GROUND"
+                        ],
+                        "context_set": ["What_facilities_does_college_offers"]
+                },
+				{
+                        "tag": "institute_intake",
+                        "patterns": [
+                                "max number of students",
+                                "number of seats per branch",
+                                "number of seats in each branch",
+                                "maximum number of seats",
+                                "maximum students intake",
+                                "What is college intake",
+                                "What is institute intake",
+                                "how many stundent are taken in each branch",
+                                "seat allotment",
+                                "seats"
+                        ],
+                        "responses": [
+                                "Seat Capacity : B.tech.-> IT-40, CS-160 , M.tech.-> CS-AI-30, CS-DS-40"
+                        ],
+                        "context_set": "what_is_seat_capacity_in_each_branch_of_institute"
+                },
+                        
+                        {
+                        "tag": "About",
+                        "patterns": [
+                                "when did college established", 
+				"when did institute open", 
+				"Who establish IIIT Vadodara", 
+				"which date college established", 
+				"Which date institute open"
+                        ],
+                        "responses": [
+                                "IIIT-V is established by the Ministry of Education (MoE) , Government Of India under Public Private Partnership (PPP) as Institute of National Importance",
+ 				"The Institute was established in the year 2013", 
+				"The college was established in the year 2013"],
+                        "context_set": ["When_was_institute_established"]
+                        },
+                        
+                        {"tag": "Hostel",
+
+			 "patterns": 
+				["Do i have to stay on campus",
+				"is accomodation available at campus",
+				 "college hostel is located at",
+				 "institute hostel is located at"
+				 ],
+
+			 "responses":
+			 ["accomodation is not available at campus,students can stay in hostel located 17km away from institute at Rajlabdhi Heritage, Behind Nidhi Petrol Pump, Koba-Ambapur Road, Gandhinagar 382421."
+			],
+			
+		 "context": ["stay_is_available_at_hostel_only"]
+        },
+        
+        
+        {
+                        "tag": "hours",
+                        "patterns": [
+                                "timing of college institute",
+                                "what is college institute timing",
+                                "working days",
+                                "when are you guys open",
+                                "what are your hours",
+                                "hours of operation",
+                                "when is the college institute open",
+                                "college timing",
+                                "what about college institute timing",
+                                "is college open on saturday",
+                                "tell something about college institute timing",
+                                "what is the college  hours",
+                                "when should i come to college institute",
+                                "when should i attend college institute",
+                                "what is my college institute time",
+                                "college institute timing",
+                                "timing college institute"
+                        ],
+                        "responses": [
+                                "College is open 9am-6pm Monday-Friday!"
+                        ],
+                        "context_set": ""
+                },
+         
+	{
+                        "tag": "number",
+                        "patterns": [
+
+                                "more info",
+                                "contact info",
+                                "how to contact college institute",
+                                "college institute telephone number",
+                                "college institute number",
+                                "What is your contact no",
+                                "Contact number?",
+                                "how to call you",
+                                "College institute phone no?",
+                                "how can i contact you",
+                                "Can i get your phone number",
+                                "how can i call you",
+                                "phone number",
+                                "phone no",
+                                "call"
+                        ],
+                        "responses": [
+                                "You can contact at +91-79-29750281, 8849303883"
+                        ],
+                        "context_set": ""
+                },
+                
+          
+          {
+                        "tag": "fees",
+                        "patterns": [
+                                "information about fee",
+                                "information on fee",
+                                "tell me the fee",
+                                "college fee",
+                                "fee per sem semester",
+                                "what is the fee of each sem semester",
+                                "what is the fees of each year",
+                                "what is fee",
+                                "what is the fees",
+                                "how much is the fees",
+                                "fees for first year",
+                                "fees",
+                                "about the fees",
+                                "tell me something about the fees"
+                        ],
+                        "responses": [
+                                "For Fee detail visit Link :http://iiitvadodara.ac.in/btech_admission.php"
+                        ],
+                        "context_set": ""
+                },
+                
+          
+          {
+                        "tag": "uniform",
+                        "patterns": [
+                                "college institute dress code",
+                                "college institute dresscode",
+                                "what is the uniform",
+                                "can we wear casuals",
+                                "Does college institute have an uniform",
+                                "Is there any uniform",
+                                "uniform",
+                                "what about uniform",
+                                "do we have to wear uniform"
+                        ],
+                        "responses": [
+                                "There is no dress code in IIIT-V"
+                        ],
+                        "context_set": "dress_code_for_institute"
+                },
+                
+          
+          
+          {
+                        "tag":"ragging",
+                        "patterns":[
+                                "ragging case",
+                                "is ragging practice active in college",
+                                "is there any ragging cases",
+                                "is ragging done here",
+                                "ragging juniors",
+                                "ragging history",
+                                "ragging incidents"
+                                
+                        ],
+                        "responses": [
+                                "We are Proud to tell you that our college provides ragging free environment, and we have strict rules against ragging"
+                        ],
+			"context_set": "ragging_free_environment"
+                },
+                
+          
+          {
+                        "tag": "task",
+                        "patterns": [
+                                "what can you do",
+                                "what are the thing you can do",
+                                "things you can do",
+                                "what can you do for me",
+                                "how you can help me",
+                                "why i should use you"
+                        ],
+                        "responses": [
+                                "I can answer to questions regarding institute",
+                                "You can ask me questions regarding institute, and i will try to answer them"
+                        ],
+                        "context_set": "how_can_you_help?"
+                }, 
+         
+         {
+                        "tag": "academic calender",
+                        "patterns": [
+                                "holidays",
+                                "when will sem semester starts",
+                                "when will sem semester end",
+                                "when is the holidays",
+                                "list of holidays",
+                                "sem semester exam",
+                                "mid sem semester exam date",
+                                "final sem semester exam dates",
+                                "when will be the exam?",
+                                "about vacations",
+                                "Registration date begins",
+                                "classes class start",
+                                "sem Semester Break",
+                                "about holidays",
+                                "When is vacation",
+                                "Student Vacation",
+                                "Announcement of Results",
+                                "When is holidays",
+                                "how long will be the vacation"
+                        ],
+                        "responses": [
+                                "Please refer academic calendar Link : http://www.iiitvadodara.ac.in/pdf/Academic_Calendar_2022-23_V_and_VII_Sem.pdf"
+                        ],
+                        "context_set": ""
+                },
+          
+          
+          {
+                        "tag": "random",
+                        "patterns": [
+                                
+                                "I love you",
+                                "fuck",
+                                "bitch",
+                                "shut up",
+                                "hell",
+                                "stupid",
+                                "idiot",
+                                "dumb ass",
+                                "asshole",
+                                "fucker",                       
+                                "Will you marry me",
+                                "hack",
+                                "how to hack",
+                                "Do you love me"
+                        ],
+                        "responses": [
+                                "Please ask appropriate query"
+                        ],
+                        "context_set": "inappropriate_query"
+                },
+         
+         
+          {
+                        "tag": "committee",
+                        "patterns": [
+                                "what are the different committe in institute college",
+                                "different committee in institute college",
+                                "Are there any committee in institute college",
+                                "Give me committee details",
+                                "committee",
+                                "how many committee are there in college institute"
+                        ],
+                        "responses": [
+                                "The Student Gymkhana of IIIT Vadodara is the body which governs all student activities of the institute. It consists of 4 committees which are institute : 1. Technical Committee, 2. Cultural Committee, 3. Sports Committee 4. Literature Committee. Various clubs operate under these committees."
+                        ],
+                        "context_set": "Various_committee_in_the_institute"
+                },
+                
+           
+          {
+                        "tag": "clubs",
+                        "patterns": [
+                                "what are the different club in institute college",
+                                "different clubs in institute college",
+                                "Are there any clubs in institute college",
+                                "Give me club details",
+                                "clubs",
+                                "how many club are there in college institute"
+                        ],
+                        "responses": [
+                                " Various clubs are : Arcadia, DOT, EBSB Club, Encore, Enigma, MOD 5, Masquerade, Obscura, Pensieve, Shades, The IIITV Coding Club"
+                        ],
+                        "context_set": "Various_clubs_in_the_institute"
+                },
+           
+           
+         {
+                        "tag": "course",
+                        "patterns": [
+                                "list of courses",
+                                "list of courses offered",
+                                "list of courses offered in institute college",
+                                "what are the courses offered in your institute college?",
+                                "courses?",
+                                "courses offered",
+                                "courses offered in institute",
+                                "courses you offer",
+                                "branches?",
+                                "courses available at institute?",
+                                "branches available at institute?",
+                                "what are the courses in institute?",
+                                "what are branches in institute?",
+                                "what are courses in iiit V?",
+                                "branches available in institute college?",
+                                "can you tell me the courses available in iiitv?",
+                                "can you tell me the branches available in iiitV?",
+                                "Electronics engineering?",
+                                "CS",
+                                "CSE",
+                                "it",
+                                "IT"
+                        ],
+                        "responses": [
+                                "IIIT Vadodara offers various courses under different disciplines which can be seen here : Link :https://betamoodle.iiitvadodara.ac.in/course/index.php"
+                        ],
+                        "context_set": "What_are_the_course_offered_by_institute."
+                }
+   ]
+}
