@@ -34,7 +34,7 @@ You can customize the chatbot's behavior by modifying json file (intents.json) a
 
 ## Credits
 
-This project was inspired by the book "Practical Natural Language Processing" by Kanhaiya Nayak (202262004)
+This project was inspired by the book "Practical Natural Language Processing" by Kanhaiya Nayak (202262004) (contact me if you want a copy of that book 😂 )
 
 ## License
 Not requiereds 
