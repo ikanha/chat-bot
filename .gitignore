@@ -1,0 +1,31 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+.env/
+venv/
+ENV/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Ignore .env file for environment variables
+.env
+
+# Ignore media files in downloads directory
+downloads/*.jpg
+downloads/*.jpeg
+downloads/*.png
+downloads/*.mp4
+downloads/*.mp3
+
+# Others
+*.swp
