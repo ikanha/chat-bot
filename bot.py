@@ -128,6 +128,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         user_id = str(update.effective_user.id)
 
         chat_id = update.effective_chat.id
+        print(f'effective_chat : {update}')
 
         print(f"chat id is {chat_id}")
 
@@ -269,7 +270,8 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
         stream = app.stream(
-            {"messages": [human_message]},
+            {"messages": [human_message],
+             "user_phone": 'phone'},
             {"configurable": {"thread_id": user_id}},
         )
 
