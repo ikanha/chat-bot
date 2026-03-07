@@ -128,10 +128,6 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         user_id = str(update.effective_user.id)
 
         chat_id = update.effective_chat.id
-        print(f'effective_chat : {update}')
-
-        print(f"chat id is {chat_id}")
-
         human_message = None
 
 

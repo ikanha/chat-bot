@@ -9,9 +9,10 @@ from langgraph.checkpoint.memory import InMemorySaver
 from langgraph.graph.message import add_messages
 from langchain_openai import ChatOpenAI
 from utils.prompts import SYSTEM_MESSAGES
+from utils.config import get_mongo_checkpointe
 load_dotenv()
 
-checkpoint = InMemorySaver()
+checkpoint = get_mongo_checkpointe()
 
 user_list = ["7000983805"]
 
@@ -19,7 +20,6 @@ llm = ChatOpenAI(
     model="gpt-5-mini",
     streaming=True
 )
-
 
 
 class AgentState(BaseModel):
@@ -64,13 +64,12 @@ def chatbot(state: AgentState):
     }
 
 
-graph = StateGraph(AgentState)
 
+
+graph = StateGraph(AgentState)
 graph.add_node("start", start)
 graph.add_node("chatbot", chatbot)
-
 graph.set_entry_point("start")
-
 graph.add_conditional_edges(
     "start",
     auth_router
